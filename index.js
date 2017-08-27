@@ -22,9 +22,7 @@ module.exports = {
     "document": false,
     "navigator": false
   },
-  "plugins": [
-    "node", "standard"
-  ],
+  "plugins": [ "node" ],
   "rules": {
     "indent": [ 1, 2, { "SwitchCase": 1 }],
     "linebreak-style": [ 1, "unix" ],
