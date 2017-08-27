@@ -187,6 +187,6 @@ module.exports = {
     "yield-star-spacing": [2, "both"],
     "yoda": [2, "never"],
     "node/no-deprecated-api": 2,
-    "node/process-exit-as-throw": 2,
+    "node/process-exit-as-throw": 2
   }
 };
