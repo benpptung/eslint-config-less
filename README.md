@@ -1,1 +1,1 @@
-#eslint-config-less
+# eslint-config-less
