@@ -23,7 +23,7 @@ module.exports = {
     "navigator": false
   },
   "plugins": [
-    "import", "node", "standard"
+    "node", "standard"
   ],
   "rules": {
     "indent": [ 1, 2, { "SwitchCase": 1 }],
