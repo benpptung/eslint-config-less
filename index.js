@@ -54,7 +54,7 @@ module.exports = {
       }}],
     "curly": [2, "multi-line"],
     "brace-style": [1, "stroustrup", { "allowSingleLine": true }],
-    "no-multi-spaces": [1, { ignoreEOLComments: true }],
+    "no-multi-spaces": [1, { "ignoreEOLComments": true }],
     "no-multiple-empty-lines": [1, { "max": 6, "maxEOF": 1 }],
     "space-before-function-paren": [1, {
       "anonymous": "never", "named": "never", "asyncArrow": "always"
