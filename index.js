@@ -27,7 +27,7 @@ module.exports = {
     "indent": [ 0, 2, { "SwitchCase": 1 }],
     "indent-legacy": [ 1, 2, { "SwitchCase": 1 } ],
     "linebreak-style": [ 1, "unix" ],
-    "quotes": [ 1, "single" ],
+    "quotes": [ 1, "single", { "allowTemplateLiterals": true } ],
     "semi": [0],
     "no-unused-vars": [ 1, {
         "caughtErrors:": "all",
@@ -38,7 +38,7 @@ module.exports = {
     "no-console": [1],
     "no-process-exit": [0],
     "no-use-before-define": [ 2, { "functions": false, "classes": false }],
-    "getter-return": [ 2, { "allowImplicit": true }],
+    "getter-return": [ 1, { "allowImplicit": true }],
     "callback-return": [ 2, ["callback", "cb", "next", "done"]],
     "no-buffer-constructor": [1],
     "no-unmodified-loop-condition": [2],
@@ -46,15 +46,21 @@ module.exports = {
     "node/no-unpublished-require": [0],
     "node/no-missing-require": [ 2, { "allowModules": ["electron", "tunnel"] }],
     "node/no-extraneous-require": [1],
-    "keyword-spacing": [2, { "before": true, "after": true }],
 
     // evaluating for added
-    "operator-linebreak": [1, "after", { "overrides": { "?": "before", ":": "before" } }],
+    "operator-linebreak": [1, "before", {
+      "overrides": {
+        "?": "after", ":": "after"
+      }}],
+    "curly": [2, "multi-line"],
+    "brace-style": [1, "stroustrup", { "allowSingleLine": true }],
+    "no-multi-spaces": [1, { ignoreEOLComments: true }],
+    "no-multiple-empty-lines": [1, { "max": 6, "maxEOF": 1 }],
+    "space-before-function-paren": [1, {
+      "anonymous": "never", "named": "never", "asyncArrow": "always"
+    }],
+    "object-property-newline": [1, { "allowMultiplePropertiesPerLine": true }],
 
-    // experimental rules
-    "arrow-spacing": [1, { "before": false, "after": true }],
-    "block-spacing": [2, "always"],
-    "brace-style": [2, "1tbs", { "allowSingleLine": true }],
     "comma-dangle": [2, {
       "arrays": "never",
       "objects": "never",
@@ -62,16 +68,17 @@ module.exports = {
       "exports": "never",
       "functions": "never"
     }],
+    "semi-spacing": [1, { "before": false, "after": true }],
+    "keyword-spacing": [1],
+
+    // experimental rules
     "comma-spacing": [2, { "before": false, "after": true }],
     "comma-style": [2, "last"],
     "constructor-super": 2,
-    "curly": [2, "multi-line"],
     "dot-location": [2, "property"],
-    "eol-last": 2,
     "func-call-spacing": [2, "never"],
     "generator-star-spacing": [2, { "before": true, "after": true }],
     "handle-callback-err": [2, "^(err|error)$" ],
-    "key-spacing": [2, { "beforeColon": false, "afterColon": true }],
     "new-cap": [2, { "newIsCap": true, "capIsNew": false }],
     "new-parens": 2,
     "no-array-constructor": 2,
@@ -117,9 +124,8 @@ module.exports = {
       "allowSamePrecedence": true
     }],
     "no-mixed-spaces-and-tabs": 2,
-    "no-multi-spaces": 2,
+
     "no-multi-str": 2,
-    "no-multiple-empty-lines": [1, { "max": 2, "maxEOF": 0 }],
     "no-negated-in-lhs": 2,
     "no-new": 2,
     "no-new-func": 2,
@@ -134,7 +140,6 @@ module.exports = {
     "no-proto": 2,
     "no-redeclare": 2,
     "no-regex-spaces": 2,
-    "no-return-assign": [2, "except-parens"],
     "no-return-await": 2,
     "no-self-assign": 2,
     "no-self-compare": 2,
@@ -157,23 +162,12 @@ module.exports = {
     "no-useless-constructor": 2,
     "no-useless-escape": 2,
     "no-useless-rename": 2,
-    "no-useless-return": 2,
     "no-whitespace-before-property": 2,
     "no-with": 2,
-    "object-property-newline": [2, { "allowMultiplePropertiesPerLine": true }],
     "one-var": [2, { "initialized": "never" }],
     "prefer-promise-reject-errors": 2,
     "rest-spread-spacing": [2, "never"],
-    "semi-spacing": [2, { "before": false, "after": true }],
-    "space-before-blocks": [2, "always"],
-    "space-before-function-paren": [1, "always"],
-    "space-in-parens": [2, "never"],
-    "space-infix-ops": 2,
     "space-unary-ops": [2, { "words": true, "nonwords": false }],
-    "spaced-comment": [2, "always", {
-      "line": { "markers": ["*package", "!", "/", ","] },
-      "block": { "balanced": true, "markers": ["*package", "!", ",", ":", "::", "flow-include"], "exceptions": ["*"] }
-    }],
     "symbol-description": 2,
     "template-curly-spacing": [2, "never"],
     "template-tag-spacing": [2, "never"],
