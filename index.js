@@ -88,6 +88,9 @@ module.exports = {
     "node/process-exit-as-throw": [2],
     "use-isnan": [2],
     "one-var": [1, { "initialized": "never" }],
+    "yield-star-spacing": [1, "both"],
+    "wrap-iife": [1, "any", { "functionPrototypeMethods": true }],
+    "valid-typeof": [2, { "requireStringLiterals": true }],
 
     // experimental rules
     "no-constant-condition": [2, { "checkLoops": false }],
@@ -171,9 +174,6 @@ module.exports = {
     "symbol-description": 2,
     "template-curly-spacing": [2, "never"],
     "template-tag-spacing": [2, "never"],
-    "unicode-bom": [2, "never"],
-    "valid-typeof": [2, { "requireStringLiterals": true }],
-    "wrap-iife": [2, "any", { "functionPrototypeMethods": true }],
-    "yield-star-spacing": [2, "both"]
+    "unicode-bom": [2, "never"]
   }
 };
