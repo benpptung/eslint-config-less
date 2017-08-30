@@ -71,6 +71,9 @@ module.exports = {
     "semi-spacing": [1, { "before": false, "after": true }],
     "keyword-spacing": [1],
     "handle-callback-err": [1, "^(er|err|error)$" ],
+    "unicode-bom": [2, "never"],
+    "template-tag-spacing": [1, "never"],
+    "template-curly-spacing": [1, "never"],
 
     // evaluating -- not happened but reasonable
     "comma-spacing": [1, { "before": false, "after": true }],
@@ -91,6 +94,7 @@ module.exports = {
     "yield-star-spacing": [1, "both"],
     "wrap-iife": [1, "any", { "functionPrototypeMethods": true }],
     "valid-typeof": [2, { "requireStringLiterals": true }],
+    "symbol-description": [1],
 
     // experimental rules
     "no-constant-condition": [2, { "checkLoops": false }],
@@ -170,10 +174,6 @@ module.exports = {
     "no-whitespace-before-property": 2,
     "prefer-promise-reject-errors": 2,
     "rest-spread-spacing": [2, "never"],
-    "space-unary-ops": [2, { "words": true, "nonwords": false }],
-    "symbol-description": 2,
-    "template-curly-spacing": [2, "never"],
-    "template-tag-spacing": [2, "never"],
-    "unicode-bom": [2, "never"]
+    "space-unary-ops": [2, { "words": true, "nonwords": false }]
   }
 };
