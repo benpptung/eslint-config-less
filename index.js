@@ -50,7 +50,7 @@ module.exports = {
     // evaluating for added
     "operator-linebreak": [1, "before", {
       "overrides": {
-        "?": "after", ":": "after"
+        "?": "ignore", ":": "ignore"
       }}],
     "curly": [2, "multi-line"],
     "brace-style": [1, "stroustrup", { "allowSingleLine": true }],
