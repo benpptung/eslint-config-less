@@ -46,6 +46,8 @@ module.exports = {
     "node/no-unpublished-require": [0],
     "node/no-missing-require": [ 2, { "allowModules": ["electron", "tunnel"] }],
     "node/no-extraneous-require": [1],
+    "no-ex-assign": [2],
+
 
     // evaluating for added
     "operator-linebreak": [1, "before", {
@@ -109,7 +111,6 @@ module.exports = {
     "no-empty-character-class": 2,
     "no-empty-pattern": 2,
     "no-eval": 2,
-    "no-ex-assign": 2,
     "no-extend-native": 2,
     "no-extra-bind": 2,
     "no-extra-boolean-cast": 2,
