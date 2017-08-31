@@ -74,6 +74,7 @@ module.exports = {
     "unicode-bom": [2, "never"],
     "template-tag-spacing": [1, "never"],
     "template-curly-spacing": [1, "never"],
+    "no-unneeded-ternary": [1, { "defaultAssignment": false }],
 
     // evaluating -- not happened but reasonable
     "comma-spacing": [1, { "before": false, "after": true }],
@@ -162,7 +163,6 @@ module.exports = {
     "no-undef": 2,
     "no-undef-init": 2,
     "no-unexpected-multiline": 2,
-    "no-unneeded-ternary": [2, { "defaultAssignment": false }],
     "no-unreachable": 2,
     "no-unsafe-finally": 2,
     "no-unsafe-negation": 2,
