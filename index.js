@@ -50,10 +50,7 @@ module.exports = {
 
 
     // evaluating for added
-    "operator-linebreak": [1, "before", {
-      "overrides": {
-        "?": "ignore", ":": "ignore"
-      }}],
+    "operator-linebreak": [1, "before"],
     "curly": [2, "multi-line"],
     "brace-style": [1, "stroustrup", { "allowSingleLine": true }],
     "no-multi-spaces": [1, { "ignoreEOLComments": true }],
