@@ -48,6 +48,7 @@ module.exports = {
     "node/no-extraneous-require": [1],
     "no-ex-assign": [2],
 
+    "semi": [ 1, "never"],
 
     // evaluating for added
     "operator-linebreak": [1, "before"],
@@ -74,6 +75,7 @@ module.exports = {
     "template-tag-spacing": [1, "never"],
     "template-curly-spacing": [1, "never"],
     "no-unneeded-ternary": [1, { "defaultAssignment": false }],
+    "no-useless-escape": [1],
 
     // evaluating -- not happened but reasonable
     "comma-spacing": [1, { "before": false, "after": true }],
@@ -167,7 +169,6 @@ module.exports = {
     "no-useless-call": 2,
     "no-useless-computed-key": 2,
     "no-useless-constructor": 2,
-    "no-useless-escape": 2,
     "no-useless-rename": 2,
     "no-whitespace-before-property": 2,
     "prefer-promise-reject-errors": 2,
