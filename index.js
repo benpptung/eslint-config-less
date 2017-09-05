@@ -76,6 +76,9 @@ module.exports = {
     "template-curly-spacing": [1, "never"],
     "no-unneeded-ternary": [1, { "defaultAssignment": false }],
     "no-useless-escape": [1],
+    "node/no-unsupported-features": [2, {
+      ignores: ["destructuring"]
+    }],
 
     // evaluating -- not happened but reasonable
     "comma-spacing": [1, { "before": false, "after": true }],
