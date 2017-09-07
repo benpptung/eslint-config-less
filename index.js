@@ -77,7 +77,7 @@ module.exports = {
     "no-unneeded-ternary": [1, { "defaultAssignment": false }],
     "no-useless-escape": [1],
     "node/no-unsupported-features": [2, {
-      ignores: ["destructuring"]
+      "ignores": ["destructuring"]
     }],
 
     // evaluating -- not happened but reasonable
