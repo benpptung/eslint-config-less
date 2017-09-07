@@ -61,14 +61,7 @@ module.exports = {
       "anonymous": "never", "named": "never", "asyncArrow": "always"
     }],
     "object-property-newline": [1, { "allowMultiplePropertiesPerLine": true }],
-
-    "comma-dangle": [2, {
-      "arrays": "never",
-      "objects": "never",
-      "imports": "never",
-      "exports": "never",
-      "functions": "never"
-    }],
+    "comma-dangle": [1, "always-multiline"],
     "semi-spacing": [1, { "before": false, "after": true }],
     "keyword-spacing": [1],
     "handle-callback-err": [1, "^(er|err|error)$" ],
