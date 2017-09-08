@@ -61,7 +61,11 @@ module.exports = {
       "anonymous": "never", "named": "never", "asyncArrow": "always"
     }],
     "object-property-newline": [1, { "allowMultiplePropertiesPerLine": true }],
-    "comma-dangle": [1, "always-multiline"],
+
+    // in favor of `never`, because
+    // 1. comply with semi rule, making the codes clean
+    // 2. time spent on reading codes is much longer than using git diff.
+    "comma-dangle": [1, "never"],
     "semi-spacing": [1, { "before": false, "after": true }],
     "keyword-spacing": [1],
     "handle-callback-err": [1, "^(er|err|error)$" ],
