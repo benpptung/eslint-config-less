@@ -48,7 +48,7 @@ module.exports = {
     "node/no-missing-require": [ 2, { "allowModules": ["electron", "tunnel"] }],
     "node/no-extraneous-require": [1],
     "no-ex-assign": [2],
-
+    "no-empty": [1],
     "semi": [ 1, "never"],
 
     // evaluating for added
