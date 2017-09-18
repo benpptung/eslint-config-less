@@ -43,7 +43,8 @@ module.exports = {
     "callback-return": [ 1, ["callback", "cb", "next", "done"]],
     "no-buffer-constructor": [1],
     "no-unmodified-loop-condition": [2],
-    "no-unused-expressions": [1],
+    "no-unused-expressions": [1, {
+      "allowShortCircuit": true, "allowTernary": true, "allowTaggedTemplates": true}],
     "node/no-unpublished-require": [0],
     "node/no-missing-require": [ 2, { "allowModules": ["electron", "tunnel"] }],
     "node/no-extraneous-require": [1],
