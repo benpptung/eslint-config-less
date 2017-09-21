@@ -28,7 +28,6 @@ module.exports = {
     "indent-legacy": [ 1, 2, { "SwitchCase": 1 } ],
     "linebreak-style": [ 1, "unix" ],
     "quotes": [ 1, "single", { "allowTemplateLiterals": true } ],
-    "semi": [0],
     "no-unused-vars": [ 1, {
         "caughtErrors:": "all",
         "varsIgnorePattern": "(colors|React)",
