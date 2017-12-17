@@ -73,7 +73,7 @@ module.exports = {
     "template-tag-spacing": [1, "never"],
     "template-curly-spacing": [1, "never"],
     "no-unneeded-ternary": [1, { "defaultAssignment": false }],
-    "no-useless-escape": [0],
+    "no-useless-escape": [1],
     "node/no-unsupported-features": [2, {
       "ignores": ["destructuring"]
     }],
