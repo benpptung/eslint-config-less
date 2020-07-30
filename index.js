@@ -1,21 +1,23 @@
 module.exports = {
   "env": {
     "browser": true,
+    "node": true,
     "commonjs": true,
     "es6": true,
-    "node": true,
+    "es2017": true,
+    "es2020": true,
     "mocha": true
   },
   "extends": [
     "eslint:recommended", "plugin:node/recommended"
   ],
   "parserOptions": {
-    "ecmaVersion": 8,
+    "ecmaVersion": 2020,
     "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
+      "impliedStrict": true,
       "jsx": true
     },
-    "sourceType": "module"
+    "sourceType": "script"
   },
   "globals": {
     "window": false,
@@ -174,6 +176,8 @@ module.exports = {
     "no-whitespace-before-property": 2,
     "prefer-promise-reject-errors": 2,
     "rest-spread-spacing": [2, "never"],
-    "space-unary-ops": [2, { "words": true, "nonwords": false }]
+    "space-unary-ops": [2, { "words": true, "nonwords": false }],
+    "node/no-unsupported-features": [0],
+    "node/no-unsupported-features/es-syntax": [0]
   }
 };
