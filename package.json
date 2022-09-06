@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-less",
   "version": "1.0.0",
-  "description": "holding less is more spirit in js coding",
+  "description": "less is more in js coding",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -37,13 +37,5 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/benpptung/eslint-config-less.git"
-  },
-  "devDependencies": {
-    "eslint": ">=4.5.0",
-    "eslint-plugin-node": ">=5.1.1"
-  },
-  "peerDependencies": {
-    "eslint": ">=4.5.0",
-    "eslint-plugin-node": ">=5.1.1"
   }
 }
