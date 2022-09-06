@@ -29,7 +29,7 @@ module.exports = {
     "linebreak-style": [ 1, "unix" ],
     "quotes": [ 1, "single", { "allowTemplateLiterals": true } ],
     "no-unused-vars": [ 1, {
-        "caughtErrors:": "all",
+        "caughtErrors": "all",
         "varsIgnorePattern": "(colors|React)",
         "argsIgnorePattern": "^_",
         "ignoreRestSiblings": true
